@@ -13,7 +13,7 @@ public class AddItemUseCase {
 
         List<Item> itemList = cart.getItemsList();
         itemList.add(item);
-        cart.calculateTotal();
+        cart.calculateTotals();
 
         //TODO - Chamar gateway para salvar carrinho atualizado
 

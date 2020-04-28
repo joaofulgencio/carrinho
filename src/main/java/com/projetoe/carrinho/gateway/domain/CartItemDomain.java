@@ -1,4 +1,4 @@
-package com.projetoe.carrinho.domain;
+package com.projetoe.carrinho.gateway.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,16 +7,14 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Item {
-
+@Getter
+@Setter
+public class CartItemDomain {
     private String sellerEmail;
     private String productName;
-    private List<Image> images;
+    private List<CartItemImageDomain> images;
     private String description;
     private double price;
-
 }

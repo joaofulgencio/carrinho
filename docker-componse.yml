@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  carrinho_database_network:
+
+services:
+  mongodb:
+    image: mongo
+    container_name: carrinho
+    volumes:
+      - ./mongodb/data:/data
+    ports:
+      - 27017:27017
+    networks:
+      - carrinho_database_network
